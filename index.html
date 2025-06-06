@@ -30,6 +30,92 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+        .service-item {
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.service-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-img img {
+  width: 100%;
+  max-height: 250px; /* Image size */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.service-title {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.service-title-name .bg-primary {
+  padding: 10px;
+  margin: 0 auto 10px;
+}
+
+.service-content {
+  flex-grow: 1;
+}
+
+.service-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.service-content a.btn {
+  font-size: 0.9rem;
+  padding: 10px 25px;
+}
+.service-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-inner {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+ 
+a.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.btn:hover {
+  background-color: #a00000; 
+  transform: scale(1.05);      
+}
+
+</style>
+
+
     </head>
     
     
@@ -205,201 +291,750 @@
 
         <!-- Services Start -->
         <div class="container-fluid service overflow-hidden pt-5">
-            <div class="container py-5">
-                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h5 class="sub-title text-primary px-3">Clubs</h5>
-                    </div>
-                    <h1 class="display-5 mb-4">Enabling Your Immigration Successfully</h1>
-                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="p.png" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="#" class="h4 text-white mb-0">Prometheans</a>
-                                        </div>
-                                       
-                                    </div>
-                                    <div class="service-content pb-4" style="background-color: white; color: black;">
-    <a href="#" style="color: black;">
-        <h4 class="mb-4 py-3" style="color: black;">Prometheans</h4>
-    </a>
-    <div class="px-4">
-        <p class="mb-4" style="color: black;">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.
-        </p>
-        <a href="#" 
-           class="btn rounded-pill py-3 px-5" 
-           style="background-color: #800000; color: white; border: none;">
-           Explore More
-        </a>
+  <div class="container py-5">
+    <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="sub-style">
+        <h5 class="sub-title text-primary px-3">Clubs</h5>
+      </div>
+      <h1 class="display-5 mb-4">Enabling Your Immigration Successfully</h1>
+      <p class="mb-0">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!
+      </p>
     </div>
-</div>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="eureka.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="#" class="h4 text-white mb-0">Eureka</a>
-                                        </div>
-                                    </div>
-                                   <div class="service-content pb-4" style="background-color: white; color: black;">
-    <a href="#" style="color: black;">
-        <h4 class="mb-4 py-3" style="color: black;">Eureka</h4>
-    </a>
-    <div class="px-4">
-        <p class="mb-4" style="color: black;">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.
-        </p>
-        <a href="#" 
-           class="btn rounded-pill py-3 px-5" 
-           style="background-color: #800000; color: white; border: none;">
-           Explore More
-        </a>
-    </div>
-</div>
+    <div class="row g-4">
+  <!-- Club 1 -->
+  <div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="IOT.jpg" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="qui.png" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="#" class="h4 text-white mb-0">Quizzards</a>
-                                        </div>
-                                    </div>
-                                    <div class="service-content pb-4" style="background-color: white; color: black;">
-    <a href="#" style="color: black;">
-        <h4 class="mb-4 py-3" style="color: black;">Quizzards</h4>
-    </a>
-    <div class="px-4">
-        <p class="mb-4" style="color: black;">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.
-        </p>
-        <a href="#" 
-           class="btn rounded-pill py-3 px-5" 
-           style="background-color: #800000; color: white; border: none;">
-           Explore More
-        </a>
-    </div>
-</div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="iot.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="#" class="h4 text-white mb-0">IoT</a>
-                                        </div>
-                                    </div>
-                                    <div class="service-content pb-4" style="background-color: white; color: black;">
-    <a href="#" style="color: black;">
-        <h4 class="mb-4 py-3" style="color: black;">IoT</h4>
-    </a>
-    <div class="px-4">
-        <p class="mb-4" style="color: black;">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.
-        </p>
-        <a href="#" 
-           class="btn rounded-pill py-3 px-5" 
-           style="background-color: #800000; color: white; border: none;">
-           Explore More
-        </a>
-    </div>
-</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="img/service-2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="#" class="h4 text-white mb-0">Residence Visa</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="#"><h4 class="text-white mb-4 py-3">Residence Visa</h4></a>
-                                        <div class="px-4">
-                                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="#" class="h4 text-white mb-0">Tourist Visa</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="#"><h4 class="text-white mb-4 py-3">Tourist Visa</h4></a>
-                                        <div class="px-4">
-                                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">IOT</a>
         </div>
-        <!-- Services End -->
+      </div>
 
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">When objects talk, innovation listens. Welcome to IoT</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="ADC.png" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
 
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">APP DEVELOPMENT</a>
+        </div>
+      </div>
 
-       
-       
-        <!-- Footer Start -->
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">A seamless app is the bridge between user and technology</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="coder.png" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">CODERS</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">In a world of bugs, we write solutions.
+Coders unite-building dreams in code</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="ekalavya.png" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">EKALAYVA</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="sae.png" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">SAE Collegiate Club</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="PROMO.jpg" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">PROMETHEANS </a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="ishrae.png" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">ISHRAE Students Chapter</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="eureka.jpg" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">EUREKA</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iot.png" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">Institution of Engineers</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="yuktha.png" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">YUKTA</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="algo.png" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">ALGO Geeks</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="arvr.png" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">AR/VR</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="drone.png" alt="IOT" class="img-fluid rounded" style="max-height: 250px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">Drone </a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="anglo.jpg" alt="anglo" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">ANGLOPHILE LOUNGE</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iot.png" alt="FOREIGN" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">FOREIGN</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iot.png" alt="TECH" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">TECHXPLORERS </a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="ieee.png" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;"> IEEE Student Chapter</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iei.png" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;"> IEI Student Chapter</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iete.png" alt="IOT" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">IETE Student Chapter </a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iot.png" alt="VENTURA" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">VENTURA</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iot.png" alt="INNOV CHEM" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">INNOV Chem</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iot.png" alt="SPORTS" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">SPORTS AND CULTURALS</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iot.png" alt="KERNEL" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">KERNEL Klub</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iot.png" alt="ASCENDERS" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">ASCENDERS </a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iot.png" alt="HAPPY" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">HAPPY HIVE</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iot.png" alt="MATH" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">MATH Club</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="service-item">
+    <div class="service-inner">
+      <!-- Club Image -->
+      <div class="service-img">
+        <img src="iot.png" alt="SPARK" class="img-fluid rounded" style="max-height: 150px; object-fit: contain; width: 100%;">
+      </div>
+
+      <!-- Club Name Button -->
+      <div class="text-center mt-2 mb-3">
+        <div class="bg-primary text-center rounded px-2 py-2 mx-auto" style="max-width: 90%;">
+          <a href="#" class="text-white" style="font-size: 1.1rem; font-weight: 600;">SPARK</a>
+        </div>
+      </div>
+
+      <!-- Club Content -->
+      <div class="service-content pb-4" style="background-color: white; color: black;">
+        <div class="px-3 text-center">
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#" class="btn rounded-pill py-2 px-4" style="background-color: #800000; color: white;">
+            Explore More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Start -->
 <div class="container-fluid" style="background-color: #800000; color: white; padding: 40px 0;">
   <div class="container">
     <div class="row g-4">
